@@ -15,7 +15,7 @@ yes | pkg install libjansson build-essential clang binutils git
 2. Fix environment & clone repo:
 ```
 cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
-git clone https://github.com/Darktron/ccminer.git
+git clone https://github.com/ImPotassium/ccminer.git
 cd ccminer
 chmod +x build.sh configure.sh autogen.sh start.sh
 ```
@@ -38,4 +38,11 @@ nano config.json
 6. Finally run the miner with:
 ```
 ~/ccminer/start.sh
+```
+
+7. Optionally, to start mining upon Termux app open:
+```
+cd ~
+echo "~/ccminer/start.sh" > .bashrc
+
 ```
